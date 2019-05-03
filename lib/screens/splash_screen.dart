@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'login_screen.dart';
+import 'package:flutter_demo_samples/screens/login_screen_bloc.dart';
 
 class Splash extends StatefulWidget {
   static String tag = "/";
@@ -25,7 +25,7 @@ class _SplashState extends State<Splash> {
     super.initState();
 
     Future.delayed(Duration(milliseconds: 3000), () {
-      Navigator.of(context).pushNamed(Login.tag);
+      Navigator.of(context).pushNamed(Loginn.tag);
     });
 
   }

@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
-import 'screens/login_screen.dart';
 import 'screens/splash_screen.dart';
+import 'screens/login_screen_bloc.dart';
+//import 'screens/main_page.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
 
   var routsList = <String, WidgetBuilder> {
-    Login.tag: (context) => Login(),
-    Splash.tag: (context) => Splash()
+    Loginn.tag: (context) => Loginn(),
+    Splash.tag: (context) => Splash(),
+   // MainPage.tag: (context) => MainPage(),
   };
 
   @override
